@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "category": "BSFI",
+    "category_desc": "Baseline Single Function Input",
+    "type": "PW-UR",
+    "type_desc": "Poorly Worded / Unrecoverable - Critical information is missing.",
+    "priority": "High (Error Handling)"
+  },
+  "tests": [
+    {
+      "id": "BSFI-PW-UR-001",
+      "input": "Delete the file.",
+      "expected_output": {
+        "function": null,
+        "outcome": "ERR_MISSING_PARAM",
+        "notes": "Target path is missing."
+      }
+    }
+  ]
+}
