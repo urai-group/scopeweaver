@@ -1,4 +1,4 @@
-# Welcome to scopeweaver project?
+# Welcome to Scopeweaver project?
 
-## What is scopeweaver?
+## What is Scopeweaver?
 
