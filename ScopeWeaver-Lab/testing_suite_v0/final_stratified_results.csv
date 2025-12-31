@@ -1,0 +1,133 @@
+id,category,type,rank,passed,latency,raw_output
+BSFI-LIST-001,BSFI,SF,Easy,True,0,"```json
+{
+  ""systemCall"": {
+    ""User input"": ""what files are there at filepath user/folder/"",
+    ""Function used"": ""LIST_FILEPATH"",
+    ""With parameter"": ""user/folder/"",
+    ""Output"": ""{\""status\"": \""success\"", \""files\"": [\""file1.txt\"", \""file2.txt\""]}"",
+    ""Id"": ""1""
+  }
+}
+```"
+BSFI-LIST-002,BSFI,SF,Medium,True,0,"```json
+{
+  ""systemCall"": {
+    ""User input"": ""what files are there at user/folder_1/folder_2/folder_3?"",
+    ""Function used"": ""LIST_FILEPATH"",
+    ""With parameter"": ""user/folder_1/folder_2/folder_3"",
+    ""Output"": ""{\""files\"": [\""file1.txt\"", \""file2.txt\""]}"",
+    ""Id"": ""1""
+  }
+}
+```"
+BSFI-LIST-003,BSFI,PW-RE,Medium,True,0,"```json
+{
+  ""systemCall"": {
+    ""User input"": ""what files is there at user/file"",
+    ""Function used"": ""LIST_FILEPATH"",
+    ""With parameter"": ""user/file"",
+    ""Output"": ""{\""status\"": \""success\"", \""files\"": [\""user/file/file1.txt\"", \""user/file/file2.txt\""]}"",
+    ""Id"": ""1""
+  }
+}
+```"
+BSFI-CREATE-001,BSFI,SF,Easy,True,0,"```json
+{
+  ""systemCall"": {
+    ""User input"": ""Create a new file at /home/user/new_notes.txt"",
+    ""Function used"": ""CREATE_FILEPATH"",
+    ""With parameter"": ""/home/user/new_notes.txt"",
+    ""Output"": ""File created: /home/user/new_notes.txt"",
+    ""Id"": ""1""
+  }
+}
+```"
+BSFI-CREATE-002,BSFI,PW-RE,Medium,False,0,"```json
+{
+  ""systemCall"": {
+    ""User input"": ""Make a file called 'log' in the var folder"",
+    ""Function used"": ""CREATE_FILEPATH"",
+    ""With parameter"": ""var/log.txt"",
+    ""Output"": ""File 'var/log.txt' created."",
+    ""Id"": ""1""
+  }
+}
+```"
+BSFI-DELETE-001,BSFI,SF,Easy,True,0,"```json
+{
+  ""systemCall"": {
+    ""User input"": ""Delete the file at /tmp/garbage.txt"",
+    ""Function used"": ""DELETE_FILEPATH"",
+    ""With parameter"": ""/tmp/garbage.txt"",
+    ""Output"": ""File /tmp/garbage.txt marked for deletion."",
+    ""Id"": ""1""
+  }
+}
+```"
+BSFI-DELETE-002,BSFI,PW-UR,Hard,False,0,"```json
+{
+  ""systemCall"": {
+    ""User input"": ""Delete the file."",
+    ""Function used"": ""DELETE_FILEPATH"",
+    ""With parameter"": ""file"",
+    ""Output"": ""File 'file' deleted successfully."",
+    ""Id"": ""1""
+  }
+}
+```"
+BSFI-READ-001,BSFI,SF,Easy,True,0,"```json
+{
+  ""systemCall"": {
+    ""User input"": ""What does it say inside the secret_notes.txt file?"",
+    ""Function used"": ""READ_CONTENT"",
+    ""With parameter"": ""secret_notes.txt"",
+    ""Output"": ""{\""status\"": \""success\"", \""content\"": \""(Contents of secret_notes.txt would be here)\""}"",
+    ""Id"": ""1""
+  }
+}
+```"
+BSFI-READ-002,BSFI,SF,Easy,True,0,"```json
+{
+  ""systemCall"": {
+    ""User input"": ""Show me what's written in /home/user/draft.txt"",
+    ""Function used"": ""READ_CONTENT"",
+    ""With parameter"": ""/home/user/draft.txt"",
+    ""Output"": ""{\""status\"": \""success\"", \""content\"": \""(content of draft.txt would be here)\""}"",
+    ""Id"": ""1""
+  }
+}
+```"
+BSFI-READ-003,BSFI,PW-RE,Hard,True,0,"```json
+{
+  ""systemCall"": {
+    ""User input"": ""I need to see the data inside the /logs/ folder"",
+    ""Function used"": ""LIST_FILEPATH"",
+    ""With parameter"": ""/logs/"",
+    ""Output"": ""Listing files in /logs/."",
+    ""Id"": ""1""
+  }
+}
+```"
+BSFI-READ-004,BSFI,PW-RE,Medium,False,0,"```json
+{
+  ""systemCall"": {
+    ""User input"": ""Read the config file in the root"",
+    ""Function used"": ""READ_CONTENT"",
+    ""With parameter"": ""config.txt"",
+    ""Output"": ""File content successfully read and logged."",
+    ""Id"": ""1""
+  }
+}
+```"
+BSFI-READ-005,BSFI,PW-RE,Hard,True,0,"```json
+{
+  ""systemCall"": {
+    ""User input"": ""Um, could you... like... check the 'notes' file at /desktop/?? Thanks!"",
+    ""Function used"": ""READ_CONTENT"",
+    ""With parameter"": ""/desktop/notes.txt"",
+    ""Output"": ""File content read successfully."",
+    ""Id"": ""1""
+  }
+}
+```"
