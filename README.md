@@ -12,11 +12,11 @@ ScopeWeaver is an AI prototype project designed to create a file management agen
 ## Documentation
 We have migrated our full project documentation to **GitHub Discussions** to foster collaboration. Please read the documentation in the following order:
 
-1.  [**Start Here: Project Roadmap & Index**](LINK_TO_DISCUSSION_1)
-2.  [**System Architecture (V1 & V2)**](LINK_TO_DISCUSSION_2)
-3.  [**Agent Tools & System Calls**](LINK_TO_DISCUSSION_3)
-4.  [**System Prompts**](LINK_TO_DISCUSSION_4)
-5.  [**Testing Suite & Validation**](LINK_TO_DISCUSSION_5)
+1.  [**Start Here: Project Roadmap & Index**](https://github.com/urai-group/scopeweaver/discussions/3)
+2.  [**System Architecture (V1 & V2)**](https://github.com/urai-group/scopeweaver/discussions/4)
+3.  [**Agent Tools & System Calls**](https://github.com/urai-group/scopeweaver/discussions/5)
+4.  [**System Prompts**](hmm)
+5.  [**Testing Suite & Validation**](https://github.com/urai-group/scopeweaver/discussions/6)
 
 ## 🚀 Priority (V1 Prototype)
 1.  Outline all important Tools (Functions).
