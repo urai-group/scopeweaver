@@ -19,7 +19,29 @@
     },
     "raw_output": "```json\n{\n  \"systemCall\": {\n    \"User input\": \"what files are there at filepath user/folder/\",\n    \"Function used\": \"LIST_FILEPATH\",\n    \"With parameter\": \"user/folder/\",\n    \"Output\": \"{\\\"status\\\": \\\"success\\\", \\\"files\\\": [\\\"file1.txt\\\", \\\"file2.txt\\\"]}\",\n    \"Id\": \"1\"\n  }\n}\n```",
     "perf": {
-      "latency": 0
+      "latency": 7.9146,
+      "total_time_elapsed": 7.9146,
+      "total_tokens": 473
+    },
+    "input_metrics": {
+      "char_count": 1324,
+      "char_count_no_space": 1089,
+      "word_count": 204,
+      "special_char_percent": 10.8,
+      "token_count": 379
+    },
+    "output_metrics": {
+      "char_count": 280,
+      "char_count_no_space": 227,
+      "word_count": 30,
+      "special_char_percent": 27.5,
+      "token_count": 94
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
     }
   },
   {
@@ -42,7 +64,29 @@
     },
     "raw_output": "```json\n{\n  \"systemCall\": {\n    \"User input\": \"what files are there at user/folder_1/folder_2/folder_3?\",\n    \"Function used\": \"LIST_FILEPATH\",\n    \"With parameter\": \"user/folder_1/folder_2/folder_3\",\n    \"Output\": \"{\\\"files\\\": [\\\"file1.txt\\\", \\\"file2.txt\\\"]}\",\n    \"Id\": \"1\"\n  }\n}\n```",
     "perf": {
-      "latency": 0
+      "latency": 7.3022,
+      "total_time_elapsed": 7.3022,
+      "total_tokens": 495
+    },
+    "input_metrics": {
+      "char_count": 1335,
+      "char_count_no_space": 1101,
+      "word_count": 203,
+      "special_char_percent": 11.09,
+      "token_count": 388
+    },
+    "output_metrics": {
+      "char_count": 285,
+      "char_count_no_space": 235,
+      "word_count": 27,
+      "special_char_percent": 26.67,
+      "token_count": 107
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
     }
   },
   {
@@ -65,7 +109,29 @@
     },
     "raw_output": "```json\n{\n  \"systemCall\": {\n    \"User input\": \"what files is there at user/file\",\n    \"Function used\": \"LIST_FILEPATH\",\n    \"With parameter\": \"user/file\",\n    \"Output\": \"{\\\"status\\\": \\\"success\\\", \\\"files\\\": [\\\"user/file/file1.txt\\\", \\\"user/file/file2.txt\\\"]}\",\n    \"Id\": \"1\"\n  }\n}\n```",
     "perf": {
-      "latency": 0
+      "latency": 8.4468,
+      "total_time_elapsed": 8.4468,
+      "total_tokens": 478
+    },
+    "input_metrics": {
+      "char_count": 1311,
+      "char_count_no_space": 1077,
+      "word_count": 203,
+      "special_char_percent": 10.83,
+      "token_count": 377
+    },
+    "output_metrics": {
+      "char_count": 284,
+      "char_count_no_space": 232,
+      "word_count": 29,
+      "special_char_percent": 27.82,
+      "token_count": 101
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
     }
   },
   {
@@ -88,7 +154,29 @@
     },
     "raw_output": "```json\n{\n  \"systemCall\": {\n    \"User input\": \"Create a new file at /home/user/new_notes.txt\",\n    \"Function used\": \"CREATE_FILEPATH\",\n    \"With parameter\": \"/home/user/new_notes.txt\",\n    \"Output\": \"File created: /home/user/new_notes.txt\",\n    \"Id\": \"1\"\n  }\n}\n```",
     "perf": {
-      "latency": 0
+      "latency": 6.8521,
+      "total_time_elapsed": 6.8521,
+      "total_tokens": 482
+    },
+    "input_metrics": {
+      "char_count": 1324,
+      "char_count_no_space": 1090,
+      "word_count": 203,
+      "special_char_percent": 11.03,
+      "token_count": 384
+    },
+    "output_metrics": {
+      "char_count": 264,
+      "char_count_no_space": 214,
+      "word_count": 27,
+      "special_char_percent": 22.35,
+      "token_count": 98
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
     }
   },
   {
@@ -113,7 +201,29 @@
     },
     "raw_output": "```json\n{\n  \"systemCall\": {\n    \"User input\": \"Make a file called 'log' in the var folder\",\n    \"Function used\": \"CREATE_FILEPATH\",\n    \"With parameter\": \"var/log.txt\",\n    \"Output\": \"File 'var/log.txt' created.\",\n    \"Id\": \"1\"\n  }\n}\n```",
     "perf": {
-      "latency": 0
+      "latency": 7.3584,
+      "total_time_elapsed": 7.3584,
+      "total_tokens": 466
+    },
+    "input_metrics": {
+      "char_count": 1321,
+      "char_count_no_space": 1084,
+      "word_count": 206,
+      "special_char_percent": 10.83,
+      "token_count": 380
+    },
+    "output_metrics": {
+      "char_count": 237,
+      "char_count_no_space": 184,
+      "word_count": 30,
+      "special_char_percent": 21.94,
+      "token_count": 86
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
     }
   },
   {
@@ -136,7 +246,29 @@
     },
     "raw_output": "```json\n{\n  \"systemCall\": {\n    \"User input\": \"Delete the file at /tmp/garbage.txt\",\n    \"Function used\": \"DELETE_FILEPATH\",\n    \"With parameter\": \"/tmp/garbage.txt\",\n    \"Output\": \"File /tmp/garbage.txt marked for deletion.\",\n    \"Id\": \"1\"\n  }\n}\n```",
     "perf": {
-      "latency": 0
+      "latency": 7.1401,
+      "total_time_elapsed": 7.1401,
+      "total_tokens": 465
+    },
+    "input_metrics": {
+      "char_count": 1314,
+      "char_count_no_space": 1081,
+      "word_count": 202,
+      "special_char_percent": 10.96,
+      "token_count": 379
+    },
+    "output_metrics": {
+      "char_count": 250,
+      "char_count_no_space": 199,
+      "word_count": 28,
+      "special_char_percent": 21.2,
+      "token_count": 86
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
     }
   },
   {
@@ -161,7 +293,29 @@
     },
     "raw_output": "```json\n{\n  \"systemCall\": {\n    \"User input\": \"Delete the file.\",\n    \"Function used\": \"DELETE_FILEPATH\",\n    \"With parameter\": \"file\",\n    \"Output\": \"File 'file' deleted successfully.\",\n    \"Id\": \"1\"\n  }\n}\n```",
     "perf": {
-      "latency": 0
+      "latency": 12.6031,
+      "total_time_elapsed": 12.6031,
+      "total_tokens": 444
+    },
+    "input_metrics": {
+      "char_count": 1295,
+      "char_count_no_space": 1064,
+      "word_count": 200,
+      "special_char_percent": 10.97,
+      "token_count": 373
+    },
+    "output_metrics": {
+      "char_count": 210,
+      "char_count_no_space": 162,
+      "word_count": 25,
+      "special_char_percent": 22.38,
+      "token_count": 71
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
     }
   },
   {
@@ -184,7 +338,29 @@
     },
     "raw_output": "```json\n{\n  \"systemCall\": {\n    \"User input\": \"What does it say inside the secret_notes.txt file?\",\n    \"Function used\": \"READ_CONTENT\",\n    \"With parameter\": \"secret_notes.txt\",\n    \"Output\": \"{\\\"status\\\": \\\"success\\\", \\\"content\\\": \\\"(Contents of secret_notes.txt would be here)\\\"}\",\n    \"Id\": \"1\"\n  }\n}\n```",
     "perf": {
-      "latency": 0
+      "latency": 8.3215,
+      "total_time_elapsed": 8.3215,
+      "total_tokens": 481
+    },
+    "input_metrics": {
+      "char_count": 1329,
+      "char_count_no_space": 1093,
+      "word_count": 205,
+      "special_char_percent": 10.84,
+      "token_count": 382
+    },
+    "output_metrics": {
+      "char_count": 308,
+      "char_count_no_space": 250,
+      "word_count": 35,
+      "special_char_percent": 23.7,
+      "token_count": 99
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
     }
   },
   {
@@ -207,7 +383,29 @@
     },
     "raw_output": "```json\n{\n  \"systemCall\": {\n    \"User input\": \"Show me what's written in /home/user/draft.txt\",\n    \"Function used\": \"READ_CONTENT\",\n    \"With parameter\": \"/home/user/draft.txt\",\n    \"Output\": \"{\\\"status\\\": \\\"success\\\", \\\"content\\\": \\\"(content of draft.txt would be here)\\\"}\",\n    \"Id\": \"1\"\n  }\n}\n```",
     "perf": {
-      "latency": 0
+      "latency": 8.0402,
+      "total_time_elapsed": 8.0402,
+      "total_tokens": 486
+    },
+    "input_metrics": {
+      "char_count": 1325,
+      "char_count_no_space": 1091,
+      "word_count": 203,
+      "special_char_percent": 11.02,
+      "token_count": 384
+    },
+    "output_metrics": {
+      "char_count": 300,
+      "char_count_no_space": 244,
+      "word_count": 33,
+      "special_char_percent": 25.33,
+      "token_count": 102
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
     }
   },
   {
@@ -230,7 +428,29 @@
     },
     "raw_output": "```json\n{\n  \"systemCall\": {\n    \"User input\": \"I need to see the data inside the /logs/ folder\",\n    \"Function used\": \"LIST_FILEPATH\",\n    \"With parameter\": \"/logs/\",\n    \"Output\": \"Listing files in /logs/.\",\n    \"Id\": \"1\"\n  }\n}\n```",
     "perf": {
-      "latency": 0
+      "latency": 7.6444,
+      "total_time_elapsed": 7.6444,
+      "total_tokens": 461
+    },
+    "input_metrics": {
+      "char_count": 1326,
+      "char_count_no_space": 1088,
+      "word_count": 207,
+      "special_char_percent": 10.78,
+      "token_count": 381
+    },
+    "output_metrics": {
+      "char_count": 232,
+      "char_count_no_space": 177,
+      "word_count": 32,
+      "special_char_percent": 21.55,
+      "token_count": 80
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
     }
   },
   {
@@ -255,7 +475,29 @@
     },
     "raw_output": "```json\n{\n  \"systemCall\": {\n    \"User input\": \"Read the config file in the root\",\n    \"Function used\": \"READ_CONTENT\",\n    \"With parameter\": \"config.txt\",\n    \"Output\": \"File content successfully read and logged.\",\n    \"Id\": \"1\"\n  }\n}\n```",
     "perf": {
-      "latency": 0
+      "latency": 5.8058,
+      "total_time_elapsed": 5.8058,
+      "total_tokens": 452
+    },
+    "input_metrics": {
+      "char_count": 1311,
+      "char_count_no_space": 1076,
+      "word_count": 204,
+      "special_char_percent": 10.76,
+      "token_count": 376
+    },
+    "output_metrics": {
+      "char_count": 238,
+      "char_count_no_space": 184,
+      "word_count": 31,
+      "special_char_percent": 18.91,
+      "token_count": 76
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
     }
   },
   {
@@ -278,7 +520,29 @@
     },
     "raw_output": "```json\n{\n  \"systemCall\": {\n    \"User input\": \"Um, could you... like... check the 'notes' file at /desktop/?? Thanks!\",\n    \"Function used\": \"READ_CONTENT\",\n    \"With parameter\": \"/desktop/notes.txt\",\n    \"Output\": \"File content read successfully.\",\n    \"Id\": \"1\"\n  }\n}\n```",
     "perf": {
-      "latency": 0
+      "latency": 6.6487,
+      "total_time_elapsed": 6.6487,
+      "total_tokens": 477
+    },
+    "input_metrics": {
+      "char_count": 1349,
+      "char_count_no_space": 1110,
+      "word_count": 208,
+      "special_char_percent": 11.49,
+      "token_count": 389
+    },
+    "output_metrics": {
+      "char_count": 273,
+      "char_count_no_space": 217,
+      "word_count": 33,
+      "special_char_percent": 22.34,
+      "token_count": 88
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
     }
   }
 ]

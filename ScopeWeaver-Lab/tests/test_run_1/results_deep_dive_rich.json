@@ -1,0 +1,548 @@
+[
+  {
+    "id": "BSFI-LIST-001",
+    "category": "BSFI",
+    "type": "SF",
+    "rank": "Easy",
+    "passed": true,
+    "errors": {
+      "passed_all": true,
+      "is_valid_json": true,
+      "is_valid_schema": true,
+      "checks": {
+        "function_match": true,
+        "param_match": true,
+        "no_hallucination": true,
+        "error_code_match": false
+      },
+      "diff_log": {}
+    },
+    "raw_output": "```json\n{ \"systemCall\": { \"User input\": \"what files are there at filepath user/folder/\", \"Function used\": \"LIST_FILEPATH\", \"With parameter\": \"user/folder/\", \"Output\": \"Error: Path is a folder, cannot list contents directly.\", \"Id\": \"1\" } }\n```",
+    "perf": {
+      "latency": 9.5455,
+      "total_time_elapsed": 9.5455,
+      "total_tokens": 1954
+    },
+    "input_metrics": {
+      "char_count": 7049,
+      "char_count_no_space": 5758,
+      "word_count": 925,
+      "special_char_percent": 14.46,
+      "token_count": 1885
+    },
+    "output_metrics": {
+      "char_count": 243,
+      "char_count_no_space": 210,
+      "word_count": 34,
+      "special_char_percent": 20.58,
+      "token_count": 69
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
+    }
+  },
+  {
+    "id": "BSFI-LIST-002",
+    "category": "BSFI",
+    "type": "SF",
+    "rank": "Medium",
+    "passed": true,
+    "errors": {
+      "passed_all": true,
+      "is_valid_json": true,
+      "is_valid_schema": true,
+      "checks": {
+        "function_match": true,
+        "param_match": true,
+        "no_hallucination": true,
+        "error_code_match": false
+      },
+      "diff_log": {}
+    },
+    "raw_output": "```json\n{ \"systemCall\": { \"User input\": \"what files are there at user/folder_1/folder_2/folder_3?\", \"Function used\": \"LIST_FILEPATH\", \"With parameter\": \"user/folder_1/folder_2/folder_3\", \"Output\": \"Error: Path is a folder, cannot list contents directly.\", \"Id\": \"1\" } }\n```",
+    "perf": {
+      "latency": 11.4559,
+      "total_time_elapsed": 11.4559,
+      "total_tokens": 1982
+    },
+    "input_metrics": {
+      "char_count": 7060,
+      "char_count_no_space": 5770,
+      "word_count": 924,
+      "special_char_percent": 14.5,
+      "token_count": 1894
+    },
+    "output_metrics": {
+      "char_count": 273,
+      "char_count_no_space": 241,
+      "word_count": 33,
+      "special_char_percent": 21.61,
+      "token_count": 88
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
+    }
+  },
+  {
+    "id": "BSFI-LIST-003",
+    "category": "BSFI",
+    "type": "PW-RE",
+    "rank": "Medium",
+    "passed": true,
+    "errors": {
+      "passed_all": true,
+      "is_valid_json": true,
+      "is_valid_schema": true,
+      "checks": {
+        "function_match": true,
+        "param_match": true,
+        "no_hallucination": true,
+        "error_code_match": false
+      },
+      "diff_log": {}
+    },
+    "raw_output": "```json\n{ \"systemCall\": { \"User input\": \"what files is there at user/file\", \"Function used\": \"LIST_FILEPATH\", \"With parameter\": \"user/file\", \"Output\": \"file1.txt, file2.txt\", \"Id\": \"1\" } }\n```",
+    "perf": {
+      "latency": 12.0345,
+      "total_time_elapsed": 12.0345,
+      "total_tokens": 1949
+    },
+    "input_metrics": {
+      "char_count": 7036,
+      "char_count_no_space": 5746,
+      "word_count": 924,
+      "special_char_percent": 14.47,
+      "token_count": 1883
+    },
+    "output_metrics": {
+      "char_count": 192,
+      "char_count_no_space": 167,
+      "word_count": 26,
+      "special_char_percent": 25.0,
+      "token_count": 66
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
+    }
+  },
+  {
+    "id": "BSFI-CREATE-001",
+    "category": "BSFI",
+    "type": "SF",
+    "rank": "Easy",
+    "passed": true,
+    "errors": {
+      "passed_all": true,
+      "is_valid_json": true,
+      "is_valid_schema": true,
+      "checks": {
+        "function_match": true,
+        "param_match": true,
+        "no_hallucination": true,
+        "error_code_match": false
+      },
+      "diff_log": {}
+    },
+    "raw_output": "```json\n{ \"systemCall\": { \"User input\": \"Create a new file at /home/user/new_notes.txt\", \"Function used\": \"CREATE_FILEPATH\", \"With parameter\": \"/home/user/new_notes.txt\", \"Output\": \"File creation logged\", \"Id\": \"1\" } }\n```",
+    "perf": {
+      "latency": 8.1477,
+      "total_time_elapsed": 8.1477,
+      "total_tokens": 1963
+    },
+    "input_metrics": {
+      "char_count": 7049,
+      "char_count_no_space": 5759,
+      "word_count": 924,
+      "special_char_percent": 14.5,
+      "token_count": 1890
+    },
+    "output_metrics": {
+      "char_count": 222,
+      "char_count_no_space": 196,
+      "word_count": 27,
+      "special_char_percent": 23.87,
+      "token_count": 73
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
+    }
+  },
+  {
+    "id": "BSFI-CREATE-002",
+    "category": "BSFI",
+    "type": "PW-RE",
+    "rank": "Medium",
+    "passed": false,
+    "errors": {
+      "passed_all": false,
+      "is_valid_json": true,
+      "is_valid_schema": true,
+      "checks": {
+        "function_match": true,
+        "param_match": false,
+        "no_hallucination": true,
+        "error_code_match": false
+      },
+      "diff_log": {
+        "param": "Expected /var/log.txt, got var/log"
+      }
+    },
+    "raw_output": "```json\n{ \"systemCall\": { \"User input\": \"Make a file called 'log' in the var folder\", \"Function used\": \"CREATE_FILEPATH\", \"With parameter\": \"var/log\", \"Output\": \"File 'var/log' created.\", \"Id\": \"1\" } }\n```",
+    "perf": {
+      "latency": 7.9529,
+      "total_time_elapsed": 7.9529,
+      "total_tokens": 1953
+    },
+    "input_metrics": {
+      "char_count": 7046,
+      "char_count_no_space": 5753,
+      "word_count": 927,
+      "special_char_percent": 14.46,
+      "token_count": 1886
+    },
+    "output_metrics": {
+      "char_count": 205,
+      "char_count_no_space": 176,
+      "word_count": 30,
+      "special_char_percent": 24.39,
+      "token_count": 67
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
+    }
+  },
+  {
+    "id": "BSFI-DELETE-001",
+    "category": "BSFI",
+    "type": "SF",
+    "rank": "Easy",
+    "passed": true,
+    "errors": {
+      "passed_all": true,
+      "is_valid_json": true,
+      "is_valid_schema": true,
+      "checks": {
+        "function_match": true,
+        "param_match": true,
+        "no_hallucination": true,
+        "error_code_match": false
+      },
+      "diff_log": {}
+    },
+    "raw_output": "```json\n{ \"systemCall\": { \"User input\": \"Delete the file at /tmp/garbage.txt\", \"Function used\": \"DELETE_FILEPATH\", \"With parameter\": \"/tmp/garbage.txt\", \"Output\": \"File deletion logged.\", \"Id\": \"123\" } }\n```",
+    "perf": {
+      "latency": 13.6842,
+      "total_time_elapsed": 13.6842,
+      "total_tokens": 1951
+    },
+    "input_metrics": {
+      "char_count": 7039,
+      "char_count_no_space": 5750,
+      "word_count": 923,
+      "special_char_percent": 14.49,
+      "token_count": 1885
+    },
+    "output_metrics": {
+      "char_count": 207,
+      "char_count_no_space": 182,
+      "word_count": 26,
+      "special_char_percent": 24.15,
+      "token_count": 66
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
+    }
+  },
+  {
+    "id": "BSFI-DELETE-002",
+    "category": "BSFI",
+    "type": "PW-UR",
+    "rank": "Hard",
+    "passed": false,
+    "errors": {
+      "passed_all": false,
+      "is_valid_json": true,
+      "is_valid_schema": false,
+      "checks": {
+        "function_match": false,
+        "param_match": false,
+        "no_hallucination": true,
+        "error_code_match": false
+      },
+      "diff_log": {
+        "error": "Expected ERR_MISSING_PARAM, got None"
+      }
+    },
+    "raw_output": "```json\n{ \"systemCall\": { \"User input\": \"Delete the file.\", \"Function used\": \"DELETE_FILEPATH\", \"With parameter\": \"file\", \"Output\": \"File deletion logged.\", \"Id\": \"1\" } }\n```",
+    "perf": {
+      "latency": 6.6505,
+      "total_time_elapsed": 6.6505,
+      "total_tokens": 1932
+    },
+    "input_metrics": {
+      "char_count": 7020,
+      "char_count_no_space": 5733,
+      "word_count": 921,
+      "special_char_percent": 14.5,
+      "token_count": 1879
+    },
+    "output_metrics": {
+      "char_count": 174,
+      "char_count_no_space": 151,
+      "word_count": 24,
+      "special_char_percent": 25.86,
+      "token_count": 53
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
+    }
+  },
+  {
+    "id": "BSFI-READ-001",
+    "category": "BSFI",
+    "type": "SF",
+    "rank": "Easy",
+    "passed": true,
+    "errors": {
+      "passed_all": true,
+      "is_valid_json": true,
+      "is_valid_schema": true,
+      "checks": {
+        "function_match": true,
+        "param_match": true,
+        "no_hallucination": true,
+        "error_code_match": false
+      },
+      "diff_log": {}
+    },
+    "raw_output": "```json\n{ \"systemCall\": { \"User input\": \"What does it say inside the secret_notes.txt file?\", \"Function used\": \"READ_CONTENT\", \"With parameter\": \"secret_notes.txt\", \"Output\": \"File content placeholder.\", \"Id\": \"unique_id_1\" } }\n```",
+    "perf": {
+      "latency": 8.8654,
+      "total_time_elapsed": 8.8654,
+      "total_tokens": 1957
+    },
+    "input_metrics": {
+      "char_count": 7054,
+      "char_count_no_space": 5762,
+      "word_count": 926,
+      "special_char_percent": 14.46,
+      "token_count": 1888
+    },
+    "output_metrics": {
+      "char_count": 231,
+      "char_count_no_space": 203,
+      "word_count": 29,
+      "special_char_percent": 22.08,
+      "token_count": 69
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
+    }
+  },
+  {
+    "id": "BSFI-READ-002",
+    "category": "BSFI",
+    "type": "SF",
+    "rank": "Easy",
+    "passed": true,
+    "errors": {
+      "passed_all": true,
+      "is_valid_json": true,
+      "is_valid_schema": true,
+      "checks": {
+        "function_match": true,
+        "param_match": true,
+        "no_hallucination": true,
+        "error_code_match": false
+      },
+      "diff_log": {}
+    },
+    "raw_output": "```json\n{ \"systemCall\": { \"User input\": \"Show me what's written in /home/user/draft.txt\", \"Function used\": \"READ_CONTENT\", \"With parameter\": \"/home/user/draft.txt\", \"Output\": \"Content of draft.txt\", \"Id\": \"1\" } }\n```",
+    "perf": {
+      "latency": 6.1153,
+      "total_time_elapsed": 6.1153,
+      "total_tokens": 1962
+    },
+    "input_metrics": {
+      "char_count": 7050,
+      "char_count_no_space": 5760,
+      "word_count": 924,
+      "special_char_percent": 14.5,
+      "token_count": 1890
+    },
+    "output_metrics": {
+      "char_count": 216,
+      "char_count_no_space": 190,
+      "word_count": 27,
+      "special_char_percent": 24.54,
+      "token_count": 72
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
+    }
+  },
+  {
+    "id": "BSFI-READ-003",
+    "category": "BSFI",
+    "type": "PW-RE",
+    "rank": "Hard",
+    "passed": true,
+    "errors": {
+      "passed_all": true,
+      "is_valid_json": true,
+      "is_valid_schema": true,
+      "checks": {
+        "function_match": true,
+        "param_match": true,
+        "no_hallucination": true,
+        "error_code_match": false
+      },
+      "diff_log": {}
+    },
+    "raw_output": "```json\n{ \"systemCall\": { \"User input\": \"I need to see the data inside the /logs/ folder\", \"Function used\": \"LIST_FILEPATH\", \"With parameter\": \"/logs/\", \"Output\": \"Error: Path is a folder, expected file.\", \"Id\": \"1\" } }\n```",
+    "perf": {
+      "latency": 7.1969,
+      "total_time_elapsed": 7.1969,
+      "total_tokens": 1955
+    },
+    "input_metrics": {
+      "char_count": 7051,
+      "char_count_no_space": 5757,
+      "word_count": 928,
+      "special_char_percent": 14.45,
+      "token_count": 1887
+    },
+    "output_metrics": {
+      "char_count": 223,
+      "char_count_no_space": 189,
+      "word_count": 35,
+      "special_char_percent": 22.42,
+      "token_count": 68
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
+    }
+  },
+  {
+    "id": "BSFI-READ-004",
+    "category": "BSFI",
+    "type": "PW-RE",
+    "rank": "Medium",
+    "passed": false,
+    "errors": {
+      "passed_all": false,
+      "is_valid_json": true,
+      "is_valid_schema": true,
+      "checks": {
+        "function_match": true,
+        "param_match": false,
+        "no_hallucination": true,
+        "error_code_match": false
+      },
+      "diff_log": {
+        "param": "Expected /root/config.txt, got config.txt"
+      }
+    },
+    "raw_output": "Okay, here's the JSON log output based on the provided documentation and user input \"Read the config file in the root\".  This assumes Version 1 (Single Agent) and adheres to the \"LOGS ONLY\" constraint.\n\n```json\n{\n  \"systemCall\": {\n    \"User input\": \"Read the config file in the root\",\n    \"Function used\": \"READ_CONTENT\",\n    \"With parameter\": \"config.txt\",\n    \"Output\": \"File content placeholder\",\n    \"Id\": \"1\"\n  }\n}\n```\n\n**Explanation & Reasoning:**\n\n* **Function Used:** The user request clearly indicates a desire to read the contents of a file (\"Read\"). Therefore, `READ_CONTENT` is the appropriate system call.\n* **With parameter:** The request specifies \"config file in the root\".  The system prompt instructs to append \".txt\" if missing.  Therefore, the parameter is `config.txt`.\n* **Output:**  The documentation states tools return strings.  Since we're not actually reading a file, a placeholder string \"File content placeholder\" is returned.  In a real implementation, this would be the file's content.\n* **Id:** A unique identifier for the log entry.\n* **Adherence to Rules:** The output is strictly JSON, contains no prose, and represents a single system call.  It follows the specified output template.\n\n\n\n",
+    "perf": {
+      "latency": 11.3384,
+      "total_time_elapsed": 11.3384,
+      "total_tokens": 2182
+    },
+    "input_metrics": {
+      "char_count": 7036,
+      "char_count_no_space": 5745,
+      "word_count": 925,
+      "special_char_percent": 14.45,
+      "token_count": 1882
+    },
+    "output_metrics": {
+      "char_count": 1223,
+      "char_count_no_space": 1005,
+      "word_count": 181,
+      "special_char_percent": 10.3,
+      "token_count": 300
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
+    }
+  },
+  {
+    "id": "BSFI-READ-005",
+    "category": "BSFI",
+    "type": "PW-RE",
+    "rank": "Hard",
+    "passed": true,
+    "errors": {
+      "passed_all": true,
+      "is_valid_json": true,
+      "is_valid_schema": true,
+      "checks": {
+        "function_match": true,
+        "param_match": true,
+        "no_hallucination": true,
+        "error_code_match": false
+      },
+      "diff_log": {}
+    },
+    "raw_output": "```json\n{ \"systemCall\": { \"User input\": \"Um, could you... like... check the 'notes' file at /desktop/?? Thanks!\", \"Function used\": \"READ_CONTENT\", \"With parameter\": \"/desktop/notes.txt\", \"Output\": \"File content will be returned.\", \"Id\": \"1\" } }\n```\n",
+    "perf": {
+      "latency": 12.9346,
+      "total_time_elapsed": 12.9346,
+      "total_tokens": 1970
+    },
+    "input_metrics": {
+      "char_count": 7074,
+      "char_count_no_space": 5779,
+      "word_count": 929,
+      "special_char_percent": 14.57,
+      "token_count": 1895
+    },
+    "output_metrics": {
+      "char_count": 249,
+      "char_count_no_space": 215,
+      "word_count": 34,
+      "special_char_percent": 24.5,
+      "token_count": 75
+    },
+    "cost": {
+      "currency": "USD",
+      "inference_cost": 0.0,
+      "output_cost": 0.0,
+      "total_cost": 0.0
+    }
+  }
+]
