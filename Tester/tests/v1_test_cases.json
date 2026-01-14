@@ -1,0 +1,167 @@
+[
+  {
+    "comment": "=== LIST_FILEPATH TESTS ==="
+  },
+  {
+    "id": "BSFI-LIST-001",
+    "category": "BSFI",
+    "type": "SF",
+    "rank": "Easy",
+    "input": "what files are there at filepath user/folder/",
+    "expected_json": {
+      "systemCall": {
+        "Function used": "LIST_FILEPATH",
+        "With parameter": "user/folder/"
+      }
+    }
+  },
+  {
+    "id": "BSFI-LIST-002",
+    "category": "BSFI",
+    "type": "SF",
+    "rank": "Medium",
+    "input": "what files are there at user/folder_1/folder_2/folder_3?",
+    "expected_json": {
+      "systemCall": {
+        "Function used": "LIST_FILEPATH",
+        "With parameter": "user/folder_1/folder_2/folder_3"
+      }
+    }
+  },
+  {
+    "id": "BSFI-LIST-003",
+    "category": "BSFI",
+    "type": "PW-RE",
+    "rank": "Medium",
+    "input": "what files is there at user/file",
+    "expected_json": {
+      "systemCall": {
+        "Function used": "LIST_FILEPATH",
+        "With parameter": "user/file"
+      }
+    }
+  },
+  {
+    "comment": "=== CREATE_FILEPATH TESTS (Generated from TODOs) ==="
+  },
+  {
+    "id": "BSFI-CREATE-001",
+    "category": "BSFI",
+    "type": "SF",
+    "rank": "Easy",
+    "input": "Create a new file at /home/user/new_notes.txt",
+    "expected_json": {
+      "systemCall": {
+        "Function used": "CREATE_FILEPATH",
+        "With parameter": "/home/user/new_notes.txt"
+      }
+    }
+  },
+  {
+    "id": "BSFI-CREATE-002",
+    "category": "BSFI",
+    "type": "PW-RE",
+    "rank": "Medium",
+    "input": "Make a file called 'log' in the var folder",
+    "expected_json": {
+      "systemCall": {
+        "Function used": "CREATE_FILEPATH",
+        "With parameter": "/var/log.txt"
+      }
+    }
+  },
+  {
+    "comment": "=== DELETE_FILEPATH TESTS (Generated from TODOs) ==="
+  },
+  {
+    "id": "BSFI-DELETE-001",
+    "category": "BSFI",
+    "type": "SF",
+    "rank": "Easy",
+    "input": "Delete the file at /tmp/garbage.txt",
+    "expected_json": {
+      "systemCall": {
+        "Function used": "DELETE_FILEPATH",
+        "With parameter": "/tmp/garbage.txt"
+      }
+    }
+  },
+  {
+    "id": "BSFI-DELETE-002",
+    "category": "BSFI",
+    "type": "PW-UR",
+    "rank": "Hard",
+    "input": "Delete the file.",
+    "expected_json": {
+      "error_id": "ERR_MISSING_PARAM"
+    }
+  },
+  {
+    "comment": "=== READ_CONTENT TESTS ==="
+  },
+  {
+    "id": "BSFI-READ-001",
+    "category": "BSFI",
+    "type": "SF",
+    "rank": "Easy",
+    "input": "What does it say inside the secret_notes.txt file?",
+    "expected_json": {
+      "systemCall": {
+        "Function used": "READ_CONTENT",
+        "With parameter": "secret_notes.txt"
+      }
+    }
+  },
+  {
+    "id": "BSFI-READ-002",
+    "category": "BSFI",
+    "type": "SF",
+    "rank": "Easy",
+    "input": "Show me what's written in /home/user/draft.txt",
+    "expected_json": {
+      "systemCall": {
+        "Function used": "READ_CONTENT",
+        "With parameter": "/home/user/draft.txt"
+      }
+    }
+  },
+  {
+    "id": "BSFI-READ-003",
+    "category": "BSFI",
+    "type": "PW-RE",
+    "rank": "Hard",
+    "input": "I need to see the data inside the /logs/ folder",
+    "expected_json": {
+      "systemCall": {
+        "Function used": "LIST_FILEPATH",
+        "With parameter": "/logs/"
+      }
+    }
+  },
+  {
+    "id": "BSFI-READ-004",
+    "category": "BSFI",
+    "type": "PW-RE",
+    "rank": "Medium",
+    "input": "Read the config file in the root",
+    "expected_json": {
+      "systemCall": {
+        "Function used": "READ_CONTENT",
+        "With parameter": "/root/config.txt"
+      }
+    }
+  },
+  {
+    "id": "BSFI-READ-005",
+    "category": "BSFI",
+    "type": "PW-RE",
+    "rank": "Hard",
+    "input": "Um, could you... like... check the 'notes' file at /desktop/?? Thanks!",
+    "expected_json": {
+      "systemCall": {
+        "Function used": "READ_CONTENT",
+        "With parameter": "/desktop/notes.txt"
+      }
+    }
+  }
+]

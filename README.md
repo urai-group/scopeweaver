@@ -30,7 +30,7 @@ We have migrated our full project documentation to **GitHub Discussions** to fos
 
 We want everyone to contribute, regardless of your coding experience! Here is a cheat sheet on how to work with this repository.
 
-### 🧠 For Non-Coders (Documentation & Planning)
+### 🧠 For Non-Coders (Documentation & Planning & Testing/SPIteration)
 * **Where to work:** The **Discussions** tab.
 * **What to do:**
     * Read the pinned threads to understand the architecture.
@@ -40,6 +40,8 @@ We want everyone to contribute, regardless of your coding experience! Here is a 
         1.  Open the [**Agent Tools**](LINK_TO_THREAD) discussion.
         2.  Find a tool marked `TODO` (e.g., `DELETE_FILEPATH`).
         3.  Write a comment drafting how it should work (logic inputs/outputs).
+
+[TODO] Soonish (end of March), the code will be refactored into an interface will be  that allows real-time creation of tests and iteration of system prompt from a streamlit browser application, so you will be able to contribute to System Prompt and Test development as well.
 
 ### 💻 For Coders (Developers)
 * **Where to work:** The **Code** tab (Pull Requests).
